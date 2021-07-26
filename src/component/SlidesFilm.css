@@ -1,0 +1,220 @@
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffd900;
+  text-align: left;
+  padding: 30px 20px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  width: 300px !important;
+  margin-bottom: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.film-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 7px 3px white;
+          box-shadow: 0px 0px 7px 3px white;
+  border-radius: 10px;
+}
+
+.film-description {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.film-img:hover .film-description {
+  height: 50%;
+  bottom: 0%;
+}
+
+.film-title,
+.film-category {
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.film-btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: #c1fdf8;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 2px #363636;
+          box-shadow: 0px 0px 5px 2px #363636;
+}
+
+.film-btn:hover {
+  background-color: #00ffea;
+}
+
+@media screen and (max-width: 735px) {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
+    width: 200px !important;
+  }
+  .film-title,
+  .film-category {
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .film-btn {
+    padding: 8px 13px;
+    border-radius: 6px;
+    background-color: #c1fdf8;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 2px #363636;
+            box-shadow: 0px 0px 5px 2px #363636;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40vh;
+    width: 160px !important;
+  }
+  .film-title,
+  .film-category {
+    background: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .film-btn {
+    padding: 6px 11px;
+    border-radius: 6px;
+    background-color: #c1fdf8;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 2px #363636;
+            box-shadow: 0px 0px 5px 2px #363636;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30vh;
+    width: 120px !important;
+  }
+  .film-title,
+  .film-category {
+    background: none;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .film-btn {
+    padding: 5px 9px;
+    border-radius: 3px;
+    background-color: #c1fdf8;
+    color: black;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 2px #363636;
+            box-shadow: 0px 0px 5px 2px #363636;
+  }
+}
+/*# sourceMappingURL=SlidesFilm.css.map */
