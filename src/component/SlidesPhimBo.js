@@ -34,7 +34,7 @@ export default function SlidesPhimBo() {
     navigation={true} 
     className="mySwiper">
         {film.map((film) => (
-                    <div>
+                    <div className="slide-film">
                         {film.phimbo.map((phimbo) =>(
                         <SwiperSlide className="film-img">
                         <img src={phimbo.imageUrl} alt="" />

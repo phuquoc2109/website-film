@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import './App.css';
 import Home from './component/page/Home';
 import ListFilmProvider from './provider/ListFilmProvider';
@@ -8,9 +8,12 @@ import Phimbo from './component/page/Phimbo';
 import Phimle from './component/page/Phimle';
 import Phimchieurap from './component/page/Phimchieurap';
 import Phimhoathinh from './component/page/phimhoathinh';
+import XemPhim from './component/page/XemPhim';
 
 
 function App() {
+  
+
   return (
     <BrowserRouter>
     <div className="App">
@@ -18,10 +21,11 @@ function App() {
       <ListFilmProvider>
         <Switch>
           <Route path="/" exact><Home /></Route>
-          <Route path="/phimbo"><Phimbo /></Route>
-          <Route path="/phimle"><Phimle /></Route>
-          <Route path="/phimchieurap"><Phimchieurap /></Route>
-          <Route path="/phimhoathinh"><Phimhoathinh /></Route>
+          <Route path="/phimbo" exact><Phimbo /></Route>
+          <Route path="/phimle" exact><Phimle /></Route>
+          <Route path="/phimchieurap" exact><Phimchieurap /></Route>
+          <Route path="/phimhoathinh" exact><Phimhoathinh /></Route>
+          <Route path="/xemphim/:index"><XemPhim /></Route>
         </Switch>
         
       </ListFilmProvider>

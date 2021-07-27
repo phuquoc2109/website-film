@@ -4,7 +4,7 @@
   font-weight: bold;
   color: #ffd900;
   text-align: left;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .swiper-container {
@@ -28,7 +28,6 @@
           align-items: center;
   height: 70vh;
   width: 300px !important;
-  margin-bottom: 30px;
 }
 
 .swiper-slide img {
@@ -37,6 +36,12 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.mySwiper {
+  border-top: 4px double #5d628a;
+  border-bottom: 4px double #5d628a;
+  border-radius: 5px;
 }
 
 .film-img {
@@ -50,6 +55,7 @@
   -webkit-box-shadow: 0px 0px 7px 3px white;
           box-shadow: 0px 0px 7px 3px white;
   border-radius: 10px;
+  margin: 10px 0px;
 }
 
 .film-description {

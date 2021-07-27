@@ -1,0 +1,211 @@
+.listfilm-main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.listfilm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.listfilm img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listfilm-des {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: rgba(37, 37, 37, 0.8);
+}
+
+.listfilm-des .listfilm-title,
+.listfilm-des .listfilm-category {
+  background: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.listfilm-des .listfilm-btn {
+  padding: 11px 20px;
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(255, 205, 205, 0.8);
+}
+
+.listfilm-des .listfilm-btn:hover {
+  background-color: rgba(255, 115, 115, 0.8);
+}
+
+.film-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border: 3px solid #182e3b;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 5px #3e6883;
+          box-shadow: 0px 0px 2px 5px #3e6883;
+  overflow: hidden;
+}
+
+.film-card:hover .listfilm-des {
+  height: 40%;
+  bottom: 0%;
+}
+
+.table__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.table__pagination-item ~ .table__pagination-item {
+  margin-left: 5px;
+}
+
+.table__pagination-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.table__pagination-item.active,
+.table__pagination-item.active:hover {
+  background-color: blanchedalmond;
+  color: blue;
+  font-weight: 600;
+}
+
+.table__pagination-item:hover {
+  color: blue;
+  background-color: white;
+}
+
+@media screen and (max-width: 1060px) {
+  .film-card {
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border: 3px solid #182e3b;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 2px 5px #3e6883;
+            box-shadow: 0px 0px 2px 5px #3e6883;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .film-card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid #182e3b;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 2px 5px #3e6883;
+            box-shadow: 0px 0px 2px 5px #3e6883;
+    overflow: hidden;
+  }
+  .listfilm-des {
+    font-size: 14px;
+  }
+  .listfilm-des .listfilm-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) and (max-width: 700px) {
+  .film-card {
+    width: 150px;
+    height: 250px;
+    margin: 10px;
+    border: 3px solid #182e3b;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 2px 5px #3e6883;
+            box-shadow: 0px 0px 2px 5px #3e6883;
+    overflow: hidden;
+  }
+  .listfilm-des {
+    font-size: 12px;
+  }
+  .listfilm-des .listfilm-btn {
+    padding: 7px 16px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=Listphim.css.map */

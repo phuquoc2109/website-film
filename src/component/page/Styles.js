@@ -17,7 +17,7 @@ position: fixed;
 width: 100%;
 left: 50%;
 background: none;
-bottom: 20px;
+bottom: 50px;
 height: 20px;
 font-size: 2.5rem;
 z-index: 1;
