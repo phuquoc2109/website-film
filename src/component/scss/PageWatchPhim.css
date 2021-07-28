@@ -1,0 +1,72 @@
+.watchphim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.watchphim .watchphim-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.watchphim .watchphim-name div {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.watchphim .watchphim-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.watchphim .watchphim-video iframe {
+  width: 60%;
+  height: 450px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.watchphim .h3 {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1050px) {
+  .watchphim .watchphim-video iframe {
+    width: 60%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .watchphim .watchphim-video iframe {
+    width: 60%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .watchphim .watchphim-video iframe {
+    width: 80%;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=PageWatchPhim.css.map */

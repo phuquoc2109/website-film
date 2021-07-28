@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { FilmContext } from '../../provider/ListFilmProvider';
-import Footer from '../Footer';
-import ListPhim from '../ListPhim';
-import Navbar from '../Navbar';
+import Footer from './Footer';
+import ListPhim from './ListPhim';
+import Navbar from './Navbar';
 
 export default function Phimle() {
     const film = useContext(FilmContext);

@@ -11,9 +11,9 @@ export default function XemPhim() {
             <Navbar />
             {film.map((film, index) => (
                     <PageWatchPhim
-                    // key={index}
-                    // limit="12" 
-                    // film={film.phimchieurap} 
+                    key={index}
+                    limit="12" 
+                    film={film.phimchieurap} 
                     phim = {phim}
                     />
                 ))}

@@ -8,7 +8,7 @@ import Phimbo from './component/page/Phimbo';
 import Phimle from './component/page/Phimle';
 import Phimchieurap from './component/page/Phimchieurap';
 import Phimhoathinh from './component/page/phimhoathinh';
-import XemPhim from './component/page/XemPhim';
+import PageWatchPhim from './component/page/PageWatchPhim';
 
 
 function App() {
@@ -21,11 +21,11 @@ function App() {
       <ListFilmProvider>
         <Switch>
           <Route path="/" exact><Home /></Route>
-          <Route path="/phimbo" exact><Phimbo /></Route>
-          <Route path="/phimle" exact><Phimle /></Route>
-          <Route path="/phimchieurap" exact><Phimchieurap /></Route>
-          <Route path="/phimhoathinh" exact><Phimhoathinh /></Route>
-          <Route path="/xemphim/:index"><XemPhim /></Route>
+          <Route path="/phimbo" ><Phimbo /></Route>
+          <Route path="/phimle" ><Phimle /></Route>
+          <Route path="/phimchieurap" ><Phimchieurap /></Route>
+          <Route path="/phimhoathinh" ><Phimhoathinh /></Route>
+          <Route path="/xemphim/:id"><PageWatchPhim /></Route>
         </Switch>
         
       </ListFilmProvider>

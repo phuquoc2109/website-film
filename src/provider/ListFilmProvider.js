@@ -15,7 +15,7 @@ export default function ListFilmProvider( { children }) {
         const data = await response.json();
     setFilm([data.phim]);
     }
-    console.log(film)
+    
 
     return (
         <FilmContext.Provider value = { film }>

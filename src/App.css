@@ -7,6 +7,12 @@
     color: #999999;
 }
 
+@media screen and ( max-width: 960px) {
+    .App {
+        overflow: hidden;
+    }
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;

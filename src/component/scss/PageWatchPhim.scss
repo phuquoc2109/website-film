@@ -1,0 +1,61 @@
+.watchphim {
+    display: flex;
+    flex-direction: column;
+    .watchphim-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div {
+            margin: 20px;
+            font-size: 20px;
+        }
+    }
+    .watchphim-video {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        iframe {
+            width: 60%;
+            height: 450px;
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .h3 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and ( max-width: 1050px) {
+    .watchphim {
+        .watchphim-video {
+            iframe {
+                width: 60%;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 850px) {
+    .watchphim {
+        .watchphim-video {
+            iframe {
+                width: 60%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 600px) {
+    .watchphim {
+        .watchphim-video {
+            iframe {
+                width: 80%;
+                height: 150px;
+            }
+        }
+    }
+}

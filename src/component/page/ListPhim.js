@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Listphim.css';
+import '../scss/Listphim.css';
 import {Link} from 'react-router-dom'
 
 export default function ListPhim(props) {
-    const {film, limit, handleClick} = props;
+    const {film, limit} = props;
     const initDataShow = limit && film ? film.slice(0, Number(limit)) : film;
 
 
@@ -20,18 +20,18 @@ export default function ListPhim(props) {
     const [currPage, setCurrPage] = useState(0);
     const selectPage = page => {
         const start = Number(limit) * page;
-        const end = start + Number(limit)
-        setDataShow(film.slice(start, end))
+        const end = start + Number(limit);
+        setDataShow(film.slice(start, end));
         setCurrPage(page);
     }
-    console.log(film)
+
     
     return (
         <div className="listfilm-main">
             <div className="listfilm">
             {dataShow.map((phim,index) => (
                 <div key={index} className="film-card">
-                    <img src={phim.imageUrl} alt="" />
+                    <img src={phim.imageUrl} alt="Hình ảnh có thể bị lỗi khi cập nhật" />
                     <div className="listfilm-des">
                         <div className="listfilm-title">{phim.title}</div>
                         <Link to={`/xemphim/${phim.imageUrl.slice(58,75)}`} ><button className="listfilm-btn">Xem Phim</button></Link>
@@ -46,7 +46,7 @@ export default function ListPhim(props) {
                     <div className="table__pagination">
                         {
                             range.map((item, index) => (
-                                <div className={`table__pagination-item ${currPage === index? 'active' : ''}`} onClick={(index) => selectPage(index)}>
+                                <div key={index} className={`table__pagination-item ${currPage === index? 'active' : ''}`} onClick={() => selectPage(index)}>
                                     {item + 1}
                                 </div>
                             ))
