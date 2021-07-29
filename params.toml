@@ -1,0 +1,8 @@
+show_related = {
+    docs = false, 
+    page = false, 
+    post = false, 
+    project = false, 
+    publication = false, 
+    talk = false
+    }
