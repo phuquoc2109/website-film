@@ -6,7 +6,7 @@ import { FilmContext } from '../../provider/ListFilmProvider';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-export default function PageWatchPhim() {
+export default function PageWatchPhim({clickSearch}) {
     const { id } = useParams();
     
     const film = useContext(FilmContext);
@@ -82,7 +82,7 @@ export default function PageWatchPhim() {
 
     return (
         <>
-            <Navbar />
+            <Navbar clickSearch={clickSearch} />
             <div className="watchphim">
                 <div className="listfilm">
                     <div className="film-card">

@@ -7,6 +7,119 @@
     color: #999999;
 }
 
+.loading {
+    margin: 50%;
+}
+
+.slide-animation {
+    animation: expand 1s ease forwards;
+    transition: all .9s ease;
+}
+
+.search {
+    width: 100%;
+    position: fixed;
+    opacity: .9;
+    top: 70px;
+    height: 90%;
+    z-index: 999;
+    background: #0c2738;
+    animation: search .4s ease-out forwards;
+    overflow: hidden;
+    transition: all .4s ease-out;
+    border: none;
+    border-bottom: 1px solid #000
+}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    position: relative;
+}
+
+.form-search input {
+    padding: 10px 20px;
+    width: 30%;
+    margin-right: 5px;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    font-size: 16px;
+}
+
+.form-search button {
+    padding: 10px 20px;
+    background-color: rgb(170, 170, 170);
+    color: black;
+    cursor: pointer;
+}
+
+.scroll-top {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+.phim-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card-search {
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 2px 5px #3e6883;
+    overflow: hidden;
+}
+
+.card-search img {
+    display: block;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+}
+
+.card-search button {
+    padding: 2%;
+    background-color: rgb(167, 167, 167);
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes search {
+    0% {
+        transform: translateY(-1400px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(1400px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+img {
+    transition: all .5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
 @media screen and ( max-width: 960px) {
     .App {
         overflow: hidden;
@@ -16,6 +129,22 @@
 .App-logo {
     height: 40vmin;
     pointer-events: none;
+}
+
+@media screen and ( max-width: 500px) {
+    .phim-search {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .card-search {
+        width: 320px;
+    }
+    .card-search img {
+        height: 100px;
+        width: 50px;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {

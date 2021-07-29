@@ -5,12 +5,12 @@ import ListPhim from './ListPhim';
 import Navbar from './Navbar';
 
 
-export default function Phimbo() {
+export default function Phimbo({clickSearch}) {
     const film = useContext(FilmContext);
     
     return (
         <div>
-            <Navbar />
+            <Navbar clickSearch={clickSearch} />
             <div style={{padding: '30px 45px', fontSize: '32px', fontWeight: 'bold',color: "orange"}}>Phim bộ</div>
             {film.map((film, index) => (
                     <ListPhim

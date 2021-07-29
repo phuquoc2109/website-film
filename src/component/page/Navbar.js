@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/Navbar.css';
 
-export default function Navbar() {
+export default function Navbar(props) {
+    const {clickSearch} = props;
     const [click, setClick] = useState(false);
     const handleClick = () => {
         setClick(!click);
@@ -13,7 +14,7 @@ export default function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <div className="navabar-container-logo">
-                        <Link to="/" className="navbar-logo" onClick={handleClick}>Phim Hay PQ</Link> 
+                        <Link to="/" className="navbar-logo" onClick={handleClick}><i style={{marginRight:"5px", fontSize:"30px"}} class="fas fa-film"></i>Phim Hay PQ</Link> 
                     </div>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -65,6 +66,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                     </ul>
+                    <Link onClick={() => clickSearch()}><i className="fas fa-search" /></Link>
                 </div>
             </nav>
         </div>

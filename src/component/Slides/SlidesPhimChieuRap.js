@@ -9,8 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { FilmContext } from "../../provider/ListFilmProvider";
 import "../scss/SlidesFilm.css";
-import { Link } from 'react-router-dom'; 
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,6 +21,7 @@ SwiperCore.use([Pagination,Navigation]);
 export default function SlidesPhimChieuRap() {
 
   const film = useContext(FilmContext);
+  
 
   return (
     <>
@@ -32,6 +32,7 @@ export default function SlidesPhimChieuRap() {
     slidesPerGroup={3}  
     navigation={true} 
     className="mySwiper">
+      
         {film.map((film, index) => (
                     <div key={index}>
                         {film.phimchieurap.map((phimchieurap, index) =>(

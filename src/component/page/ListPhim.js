@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../scss/Listphim.css';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import '../../App.css';
 
 export default function ListPhim(props) {
-    const {film, limit} = props;
+    const {film, limit, valueInput} = props;
     const initDataShow = limit && film ? film.slice(0, Number(limit)) : film;
-
 
     const [dataShow, setDataShow] = useState(initDataShow);
     
@@ -27,7 +27,7 @@ export default function ListPhim(props) {
 
     
     return (
-        <div className="listfilm-main">
+        <div className="listfilm-main slide-animation">
             <div className="listfilm">
             {dataShow.map((phim,index) => (
                 <div key={index} className="film-card">
