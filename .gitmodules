@@ -1,0 +1,3 @@
+[submodule "React-Toast"] 
+  path = React-Toast
+  url = https://github.com/fkhadra/react-toastify.git
