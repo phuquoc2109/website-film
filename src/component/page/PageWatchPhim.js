@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import "../scss/PageWatchPhim.css";
-import ReactPlayer from 'react-player/lazy'
 import { useParams } from 'react-router-dom';
 import { FilmContext } from '../../provider/ListFilmProvider';
+import "../scss/PageWatchPhim.css";
 import Footer from './Footer';
 import Navbar from './Navbar';
 

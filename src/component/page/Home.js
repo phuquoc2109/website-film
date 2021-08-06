@@ -6,6 +6,7 @@ import SlidesPhimChieuRap from '../Slides/SlidesPhimChieuRap'
 import SlidesPhimLe from '../Slides/SlidesPhimLe'
 import SlidesPhimHoatHinh from '../Slides/SlidesPhimThieuNhi';
 import '../../App.css'
+import Comment from '../comment/Comment'
 
 
 export default function Home(props) {
@@ -17,6 +18,7 @@ export default function Home(props) {
                 <SlidesPhimBo />
                 <SlidesPhimLe />
                 <SlidesPhimHoatHinh />
+                <Comment />
             </div>
             <Footer />
         </div>

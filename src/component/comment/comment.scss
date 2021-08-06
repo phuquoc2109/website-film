@@ -1,0 +1,84 @@
+.title-comment {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(114, 226, 230);
+}
+
+.comment_input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: baseline;
+    &_field {
+        margin-right: 30px !important;
+    }
+    &_button {
+        color: #999999;
+        padding: 7px 15px;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover {
+            color: white;
+            background-color: rgb(70, 119, 255);
+        }
+    }
+}
+
+.MuiInputBase-input {
+    font: inherit;
+    color: #999999 !important;
+    padding: 10px !important;
+}
+
+.comment-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 0px 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgb(55, 84, 92);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    &-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        background-color: rgb(55, 84, 92);
+        &-comment {
+            margin: 0px 3px;
+            background-color: rgb(55, 84, 92);
+        }
+    }
+    &-cmt {
+        font-style: italic;
+        color: rgb(250, 234, 206);
+        background-color: rgb(55, 84, 92);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    i {
+        background-color: rgb(55, 84, 92);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .comment_input {
+        flex-direction: column;
+        &_field {
+            margin-bottom: 30px !important;
+        }
+    }
+    .comment-card {
+        &-cmt {
+            margin-left: 20px;
+        }
+    }
+}

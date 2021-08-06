@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from "react"
-import { Link } from "react-router-dom"
-import { FilmContext } from "../../provider/ListFilmProvider";
-import { ToastContainer, toast } from 'react-toastify';
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FilmContext } from "../../provider/ListFilmProvider";
 
 const Search = ({clickSearch}) => {
     

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import '../scss/Listphim.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../App.css';
+import '../scss/Listphim.css';
 
 export default function ListPhim(props) {
-    const {film, limit, valueInput} = props;
+    const {film, limit} = props;
     const initDataShow = limit && film ? film.slice(0, Number(limit)) : film;
 
     const [dataShow, setDataShow] = useState(initDataShow);

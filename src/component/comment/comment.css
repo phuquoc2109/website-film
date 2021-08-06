@@ -1,0 +1,114 @@
+.title-comment {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+  color: #72e2e6;
+}
+
+.comment_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.comment_input_field {
+  margin-right: 30px !important;
+}
+
+.comment_input_button {
+  color: #999999;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.comment_input_button:hover {
+  color: white;
+  background-color: #4677ff;
+}
+
+.MuiInputBase-input {
+  font: inherit;
+  color: #999999 !important;
+  padding: 10px !important;
+}
+
+.comment-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 0px 30px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #37545c;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+.comment-card-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #37545c;
+}
+
+.comment-card-name-comment {
+  margin: 0px 3px;
+  background-color: #37545c;
+}
+
+.comment-card-cmt {
+  font-style: italic;
+  color: #faeace;
+  background-color: #37545c;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comment-card i {
+  background-color: #37545c;
+}
+
+@media screen and (max-width: 730px) {
+  .comment_input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment_input_field {
+    margin-bottom: 30px !important;
+  }
+  .comment-card-cmt {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=comment.css.map */
