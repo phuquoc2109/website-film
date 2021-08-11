@@ -3,12 +3,14 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialComment = [{
         id: 1,
         name: 'Quoc Phu',
-        comment: 'Quảng cáo hơi nhiều lúc xem phim... Xem không được trọn vẹn :D ... Nên khắc phục...'
+        comment: 'Quảng cáo hơi nhiều lúc xem phim... Xem không được trọn vẹn :D ... Nên khắc phục...',
+        date: '26/07/2021 08:51:59'
     },
     {
         id: 2,
         name: 'Le Van Teo',
-        comment: 'Phim tình cảm kia hay quá... Đến đoạn buồn khóc ướt cả gối.. Vì ướt gối nên vote 0☆ !!!'
+        comment: 'Phim tình cảm kia hay quá... Đến đoạn buồn khóc ướt cả gối.. Vì ướt gối nên vote 0☆ !!!',
+        date: '01/08/2021 23:21:12'
     }
 ]
 

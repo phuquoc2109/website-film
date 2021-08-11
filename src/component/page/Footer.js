@@ -12,9 +12,9 @@ export default function Footer() {
                 <li>Địa chỉ: Tôn Thất Tùng - Nam Phước - Duy Xuyên - Quảng Nam</li>
             </ul>
             <ul className="footer-contact-icon">
-                <li><a href="https://www.facebook.com/phu.quoocs/"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/__phuquoc"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/quoc14391560"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/phu.quoocs/"><i className="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/__phuquoc"><i className="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/quoc14391560"><i className="fab fa-twitter"></i></a></li>
             </ul>
         </div>
     )

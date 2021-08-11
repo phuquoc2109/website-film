@@ -14,7 +14,7 @@ export default function Navbar(props) {
             <nav className="navbar">
                 <div className="navbar-container">
                     <div className="navabar-container-logo">
-                        <Link to="/" className="navbar-logo" onClick={handleClick}><i style={{marginRight:"5px", fontSize:"30px"}} class="fas fa-film"></i>Phim Hay PQ</Link> 
+                        <Link to="/" className="navbar-logo" onClick={handleClick}><i style={{marginRight:"5px", fontSize:"30px"}} className="fas fa-film"></i>Phim Hay PQ</Link> 
                     </div>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -66,7 +66,7 @@ export default function Navbar(props) {
                             </Link>
                         </li>
                     </ul>
-                    <Link onClick={() => clickSearch()}><i className="fas fa-search" /></Link>
+                    <a onClick={() => clickSearch()}><i className="fas fa-search" /></a>
                 </div>
             </nav>
         </div>

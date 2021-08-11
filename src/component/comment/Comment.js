@@ -14,12 +14,23 @@ export default function Comment() {
     const [isEdit, setIsEdit] = useState(false);
     
     const [id , setId] = useState();
+ 
+    function formatDate (date){
+        const day = `0${date.getDate()}`.slice(-2);
+        const month = `0${date.getMonth() + 1}`.slice(-2);
+        const year = date.getFullYear();
+        const hours = `0${date.getHours()}`.slice(-2);
+        const minutes = `0${date.getMinutes()}`.slice(-2);
+        const seconds = `0${date.getSeconds()}`.slice(-2);
+        return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+    }
 
     const initialComment = {
         id: id,
         name: nameComment,
         comment: valueComment,
-        status: true
+        status: true,
+        date: ''
     }
     
 
@@ -30,18 +41,23 @@ export default function Comment() {
             if(isEdit){
                 const cmtEdit = initialComment;
                 const action = editComment(cmtEdit); 
+                initialComment.date = formatDate(new Date)
                 dispatch(action);
                 setNameCommnet('');
                 setValueCommnet('');
                 setIsEdit(false);
                 toast.success("Chỉnh sửa bình luận thành công")
+                
+
             }else{
                 initialComment.id = Math.random();
+                initialComment.date = formatDate(new Date)
                 const action = addComment(initialComment);
                 dispatch(action);
                 toast.success("Bình luận thành công")
                 setNameCommnet('');
                 setValueCommnet('');
+                
             }
             
         }
